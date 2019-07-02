@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  remote_user: ubuntu
+  tasks:
+    - name: apt get update and upgrade
+      apt: update_cache=yes
+    - name: apt upgrade
+      apt: name='*' state=latest
+    - name: apt docker io
+      apt: name=docker.io state=latest update_cache=yes
