@@ -1,7 +1,6 @@
 ---
 - hosts: all
   become: true
-  remote_user: ubuntu
   tasks:
     - name: apt get update and upgrade
       apt: update_cache=yes
@@ -9,3 +8,98 @@
       apt: name='*' state=latest
     - name: apt docker io
       apt: name=docker.io state=latest update_cache=yes
+    - name: set kubernetes deb repo in apt source list
+      lineinfile: create=yes
+                  dest=/etc/apt/sources.list.d/kubernetes.list
+                  line="deb http://apt.kubernetes.io/ kubernetes-xenial main"
+    - name: get depo key
+      shell:  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+    - name: Disable Swap
+      shell: |
+           swapoff -a
+    - name: Install kubadm
+      apt:
+        name: kubeadm
+        state: present
+        update_cache: yes
+    - name: install kubelet
+      apt:
+        name: kubelet
+        state: present
+        update_cache: yes
+    - name: install kubectl
+      apt:
+        name: kubectl
+        state: present
+        update_cache: yes
+- hosts: master
+  become: true
+  tasks:
+    #- name: get rbac yaml file
+    #  command: wget https://tinyurl.com/yb4xturm -O rbac-kdd.yaml
+    #- name: get calico yaml file
+    #  command: wget https://tinyurl.com/y8lvqc9g -O calico.yaml
+    - name: get rbac
+      become_user: ubuntu
+      get_url:
+        url: https://tinyurl.com/yb4xturm
+        dest: /home/{{ansible_ssh_user}}
+    - name: get calico
+      become_user: ubuntu
+      get_url:
+        url: https://tinyurl.com/y8lvqc9g
+        dest: /home/{{ansible_ssh_user}}
+    - name: run kubeadmin
+      shell: kubeadm init --pod-network-cidr 192.168.0.0/16 | tee kubeadm-init.out
+    - name: create .kube directory
+      file:
+        path: /home/{{ansible_ssh_user}}/.kube
+        state: directory
+        owner: "{{ansible_ssh_user}}"
+        group: "{{ansible_ssh_user}}"
+    - name: copy admin.conf to .kube
+      get_url:
+        url: file:///etc/kubernetes/admin.conf
+        dest: /home/{{ansible_ssh_user}}/.kube/config
+        owner: ubuntu
+        group: ubuntu
+    - debug:
+        msg: "This ran on this host {{item}}"
+      delegate_to: "{{item}}"
+      loop: "{{groups.node}}"
+    - name: install rbac in kubernetes
+      become_user: ubuntu
+      command: kubectl apply -f /home/ubuntu/rbac-kdd.yaml
+    - name: install calico in kubernetes
+      become_user: ubuntu
+      command: kubectl apply -f /home/ubuntu/calico.yaml
+    - name: get pem
+      shell:  kubeadm token list | awk ' NR==2 {print $1}'
+      register: master_pem
+    - name: get sha:256 key
+      shell: openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'
+      register: sha_key
+    - name: get primary ip address
+      shell: ip route get 1 | awk '{print $NF;exit}'
+      register: ip_address
+    - name: Add K8s token and hash to a dummy host
+      add_host:
+        name: "dummy"
+        token: "{{master_pem.stdout}}"
+        hash: "{{sha_key.stdout}}"
+        ip_address: "{{ip_address.stdout}}"
+
+
+- hosts: node1
+  become: true
+  tasks:
+    - debug:
+        msg: " worker dummy k8s is pem = {{ hostvars['dummy']['token']}}"
+    - debug:
+        msg: "  worker dummy k8s is key = '{{ hostvars['dummy']['hash']}}'"
+    - debug:
+        msg: " worker dummy k8s is key = '{{ hostvars['dummy']['ip_address']}}'"
+    -
+
+
+
