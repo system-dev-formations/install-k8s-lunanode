@@ -14,14 +14,13 @@ def create_master_cluster(name):
                 {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
 
 
-master_name = 'k8s-cluster-'
-node_name = 'k8s-cluster-'
+cluster_name = 'k8s-cluster-'
 number_of_vm = input("Nbr_of_cluster ? ")
 
 for i in range(1, int(number_of_vm) + 1):
-    create_master_cluster(master_name + str(i) + "-master")
+    create_master_cluster(cluster_name + str(i) + "-master")
     for j in range(1, 4):
-        vm_name = node_name + str(i) + "-node-" + str(j)
+        vm_name = cluster_name + str(i) + "-node-" + str(j)
         api.request("vm", "create",
                     {'hostname': vm_name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
 

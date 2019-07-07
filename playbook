@@ -32,6 +32,13 @@
         name: kubectl
         state: present
         update_cache: yes
+    - name: create .kube directory
+      file:
+        path: /home/{{ansible_ssh_user}}/.kube
+        state: directory
+        owner: "{{ansible_ssh_user}}"
+        group: "{{ansible_ssh_user}}"
+
 - hosts: master
   become: true
   tasks:
@@ -51,22 +58,15 @@
         dest: /home/{{ansible_ssh_user}}
     - name: run kubeadmin
       shell: kubeadm init --pod-network-cidr 192.168.0.0/16 | tee kubeadm-init.out
-    - name: create .kube directory
-      file:
-        path: /home/{{ansible_ssh_user}}/.kube
-        state: directory
-        owner: "{{ansible_ssh_user}}"
-        group: "{{ansible_ssh_user}}"
-    - name: copy admin.conf to .kube
+    - name: copy master admin.conf to ansible controller
       get_url:
         url: file:///etc/kubernetes/admin.conf
         dest: /home/{{ansible_ssh_user}}/.kube/config
         owner: ubuntu
         group: ubuntu
-    - debug:
-        msg: "This ran on this host {{item}}"
-      delegate_to: "{{item}}"
-      loop: "{{groups.node}}"
+    - name: Fetch the file from master to ansible controller
+      run_once: yes
+      fetch: src=/etc/kubernetes/admin.conf dest=/tmp/admin.conf flat=yes
     - name: install rbac in kubernetes
       become_user: ubuntu
       command: kubectl apply -f /home/ubuntu/rbac-kdd.yaml
@@ -88,18 +88,10 @@
         token: "{{master_pem.stdout}}"
         hash: "{{sha_key.stdout}}"
         ip_address: "{{ip_address.stdout}}"
-
-
-- hosts: node1
+- hosts: node
   become: true
   tasks:
-    - debug:
-        msg: " worker dummy k8s is pem = {{ hostvars['dummy']['token']}}"
-    - debug:
-        msg: "  worker dummy k8s is key = '{{ hostvars['dummy']['hash']}}'"
-    - debug:
-        msg: " worker dummy k8s is key = '{{ hostvars['dummy']['ip_address']}}'"
-    -
-
-
-
+    - name: Copy the file from the ansible to nodes
+      copy: src=/tmp/admin.conf dest=/home/{{ansible_ssh_user}}/.kube/config
+    - name: Node join to kubernetes master
+      shell: kubeadm join --token {{ hostvars['dummy']['token']}} {{ hostvars['dummy']['ip_address']}}:6443 --discovery-token-ca-cert-hash sha256:{{ hostvars['dummy']['hash']}}
