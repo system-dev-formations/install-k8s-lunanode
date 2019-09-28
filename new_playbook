@@ -63,12 +63,12 @@
     - name: Fetch the file from master to the ansible controller
       run_once: yes
       fetch: src=/etc/kubernetes/admin.conf dest=/tmp/admin.conf flat=yes
-    - name: install rbac in kubernetes
-      become_user: ubuntu
-      command: kubectl apply -f /home/ubuntu/rbac-kdd.yaml
+    #- name: install rbac in kubernetes
+    #  become_user: ubuntu
+    #  command: kubectl apply -f /home/ubuntu/rbac-kdd.yaml
     - name: install calico in kubernetes
       become_user: ubuntu
-      command: kubectl apply -f /home/ubuntu/calico.yaml
+      command: kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
     - name: get pem
       shell:  kubeadm token list | awk ' NR==2 {print $1}'
       register: master_pem
