@@ -16,7 +16,7 @@
       shell:  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
     - name: Disable Swap
       shell: |
-           swapoff -a
+        swapoff -a
     - name: Install kubadm
       apt:
         name: kubeadm
@@ -47,11 +47,11 @@
       get_url:
         url: https://tinyurl.com/yb4xturm
         dest: /home/{{ansible_ssh_user}}
-    - name: get calico
-      become_user: ubuntu
-      get_url:
-        url: https://tinyurl.com/y8lvqc9g
-        dest: /home/{{ansible_ssh_user}}
+    #- name: get calico
+    #  become_user: ubuntu
+    #  get_url:
+    #    url: https://tinyurl.com/y8lvqc9g
+    #    dest: /home/{{ansible_ssh_user}}
     - name: run kubeadmin
       shell: kubeadm init --pod-network-cidr 192.168.0.0/16 | tee kubeadm-init.out
     - name: copy master admin.conf to ansible controller
@@ -63,12 +63,12 @@
     - name: Fetch the file from master to the ansible controller
       run_once: yes
       fetch: src=/etc/kubernetes/admin.conf dest=/tmp/admin.conf flat=yes
-    - name: install rbac in kubernetes
-      become_user: ubuntu
-      command: kubectl apply -f /home/ubuntu/rbac-kdd.yaml
+    #- name: install rbac in kubernetes
+    #  become_user: ubuntu
+    #  command: kubectl apply -f /home/ubuntu/rbac-kdd.yaml
     - name: install calico in kubernetes
       become_user: ubuntu
-      command: kubectl apply -f /home/ubuntu/calico.yaml
+      command: kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
     - name: get pem
       shell:  kubeadm token list | awk ' NR==2 {print $1}'
       register: master_pem
@@ -84,6 +84,7 @@
         token: "{{master_pem.stdout}}"
         hash: "{{sha_key.stdout}}"
         ip_address: "{{ip_address.stdout}}"
+
 - hosts: node
   become: true
   tasks:
@@ -91,3 +92,19 @@
       copy: src=/tmp/admin.conf dest=/home/{{ansible_ssh_user}}/.kube/config
     - name: All nodes join the kubernetes master
       shell: kubeadm join --token {{ hostvars['dummy']['token']}} {{ hostvars['dummy']['ip_address']}}:6443 --discovery-token-ca-cert-hash sha256:{{ hostvars['dummy']['hash']}}
+      ignore_errors: yes
+
+- hosts: master
+  tasks:
+    - name: install kubernetes dashboard
+      copy: src=recommended.yaml dest=/home/{{ ansible_ssh_user }}
+    - name: apply the dashboard script
+      shell: kubectl apply -f /home/{{ ansible_ssh_user }}/recommended.yaml
+
+- hosts: all,!dummy
+  become: true
+  tasks:
+    - name: change user's password on all hosts
+      user:
+        name: "{{ansible_user}}"
+        password: "{{ 'lawn-vex' | password_hash('sha512') }}"

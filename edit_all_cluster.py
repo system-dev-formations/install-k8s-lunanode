@@ -8,26 +8,14 @@ with open(r"/home/hme/.lunanode/commands.txt") as hpass:
     lines = hpass.readlines()
 api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 
-def create_master_cluster(name):
-    api.request("vm", "create",
-                {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
-
-cluster_name = 'k8s-blue'
-number_of_vm = input("Nbr_of_cluster ? ")
-
-for i in range(1, int(number_of_vm) + 1):
-    create_master_cluster(cluster_name  + "-master")
-    for j in range(1, 3):
-        vm_name = cluster_name  + "-node-" + str(j)
-        api.request("vm", "create",
-                    {'hostname': vm_name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
-# sleep while lunanode setting up public ip addresses for each VMs
-time.sleep(240)
+cluster_name = 'k8s-green-'
 results = api.request('vm', 'list')
-f = open(r"/home/hme/inventory-" + cluster_name, "w+")
-hfile = open(r"/home/hme/user_list-" + cluster_name, "w+")
+f = open(r"/home/hme/inventory_lunanode_green", "w+")
+hfile = open(r"/home/hme/user_list_k8s_green", "w+")
 val = results.get("vms")
 user_dic = {}
+print
+len(val)
 for i in range(0, len(val)):
     flag = 0
     for key, value in val[i].items():

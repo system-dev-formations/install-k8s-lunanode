@@ -8,31 +8,41 @@ with open(r"/home/hme/.lunanode/commands.txt") as hpass:
     lines = hpass.readlines()
 api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 
-def create_master_cluster(name):
+# image Ubuntu-remote
+def create_ubuntu_remote(name):
     api.request("vm", "create",
-                {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
+                {'hostname': name, 'plan_id': 3, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
 
-cluster_name = 'k8s-blue'
-number_of_vm = input("Nbr_of_cluster ? ")
+# image Centos-remote
+def create_centos_remote(name):
+    api.request("vm", "create",
+                {'hostname': name, 'plan_id': 3, 'region': 'roubaix', 'image_id': 148508, 'storage': 70})
 
-for i in range(1, int(number_of_vm) + 1):
-    create_master_cluster(cluster_name  + "-master")
-    for j in range(1, 3):
-        vm_name = cluster_name  + "-node-" + str(j)
-        api.request("vm", "create",
-                    {'hostname': vm_name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
-# sleep while lunanode setting up public ip addresses for each VMs
-time.sleep(240)
+# image Centos-controller
+def create_centos_controller(name):
+    api.request("vm", "create",
+                {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148508, 'storage': 70})
+
+project_name = 'ansible-oxiane-'
+user_number = input("Numero du cluster ansible ? ")
+user_number= str(user_number)
+create_centos_controller(project_name + "controller-" +  user_number)
+create_centos_remote(project_name + "remote-centos-" +  user_number)
+#create_ubuntu_remote(project_name + "remote-ubuntu-" +  user_number)
+
 results = api.request('vm', 'list')
-f = open(r"/home/hme/inventory-" + cluster_name, "w+")
-hfile = open(r"/home/hme/user_list-" + cluster_name, "w+")
+f = open(r"/home/hme/inventory_lunanode_oxiane_" + user_number, "w+")
+hfile = open(r"/home/hme/user_list_k8s_oxiane_" + user_number, "w+")
 val = results.get("vms")
 user_dic = {}
+print
+len(val)
 for i in range(0, len(val)):
     flag = 0
     for key, value in val[i].items():
         if key == 'name':
-            if cluster_name not in value:
+            #search= "-" + user_number
+            if user_number not in value:
                 break
             print('name=', value)
             user = value

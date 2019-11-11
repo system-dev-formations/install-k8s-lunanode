@@ -7,7 +7,7 @@ with open(r"/home/hme/.lunanode/commands.txt") as hpass:
 api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 results = api.request('vm', 'list')
 print(results)
-results = api.request('vm', 'info', {'vm_id': '1c018f61-e116-46d2-8a64-18f6963e3be7'})
+results = api.request('vm', 'info', {'vm_id': '924637f5-6b72-441b-a2c3-0a3d75dc5455'})
 print ("-----------------------")
 print (results)
 
