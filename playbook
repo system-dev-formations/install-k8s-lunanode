@@ -96,15 +96,26 @@
 
 - hosts: master
   tasks:
-    - name: install kubernetes dashboard
+    - name: copy dashboard yaml file to master
       copy: src=recommended.yaml dest=/home/{{ ansible_ssh_user }}
     - name: apply the dashboard script
       shell: kubectl apply -f /home/{{ ansible_ssh_user }}/recommended.yaml
+    - name: copy admin-user to the master
+      copy: src=dashboard-adminuser.yaml dest=/home/{{ ansible_ssh_user }}
+    - name: apply admin-user script
+      shell: kubectl apply -f /home/{{ ansible_ssh_user }}/dashboard-adminuser.yaml
+
 
 - hosts: all,!dummy
-  become: true
   tasks:
     - name: change user's password on all hosts
+      become: true
       user:
-        name: "{{ansible_user}}"
+        name: "{{ansible_ssh_user}}"
         password: "{{ 'lawn-vex' | password_hash('sha512') }}"
+    - name: added block of alias and completion for kubectl
+      blockinfile:
+        path:  /home/{{ ansible_ssh_user }}/.bashrc
+        block: |
+          alias k='kubectl'
+          source <( kubectl completion bash | sed s/kubectl/k/g)
