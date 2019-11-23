@@ -52,7 +52,7 @@
     #  get_url:
     #    url: https://tinyurl.com/y8lvqc9g
     #    dest: /home/{{ansible_ssh_user}}
-    - name: run kubeadmin
+    - name: run kubeadmin init
       shell: kubeadm init --pod-network-cidr 192.168.0.0/16 | tee kubeadm-init.out
     - name: copy master admin.conf to ansible controller
       get_url:
