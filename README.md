@@ -17,7 +17,7 @@ So I use to change it by naming each VM using a color reference, line 15 and tes
  
 ## Inventory 
 The create_vm_cluster script save all cluster ip addresse, password and user name in a file so you should change it 
-accordlying to the following structure for your inventory file.   
+accordingly to the following structure for your inventory file.   
 ```jsunicoderegexp
 [node]
 51.255.211.160  ansible_ssh_user=ubuntu  ansible_ssh_pass=password ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
