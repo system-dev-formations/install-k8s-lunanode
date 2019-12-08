@@ -14,9 +14,18 @@
                   line="deb http://apt.kubernetes.io/ kubernetes-xenial main"
     - name: get depo key
       shell:  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+    - name: Remove swapfile from /etc/fstab
+      mount:
+        name: "{{ item}}"
+        fstype: swap
+        state: absent
+      with_items:
+        - swap
+        - none
     - name: Disable Swap
       shell: |
         swapoff -a
+      when: ansible_swaptotal_mb > 0
     - name: Install kubadm
       apt:
         name: kubeadm
@@ -96,6 +105,8 @@
 
 - hosts: master
   tasks:
+    - name: copy Dashboard Readme
+      copy: src=DASHBOARD.md dest=/home/{{ ansible_ssh_user }}
     - name: copy dashboard yaml file to master
       copy: src=recommended.yaml dest=/home/{{ ansible_ssh_user }}
     - name: apply the dashboard script

@@ -12,7 +12,7 @@ def create_master_cluster(name):
     api.request("vm", "create",
                 {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
 
-cluster_name = 'k8s-black'
+cluster_name = 'k8s-green'
 number_of_vm = input("Nbr_of_cluster ? ")
 
 for i in range(1, int(number_of_vm) + 1):

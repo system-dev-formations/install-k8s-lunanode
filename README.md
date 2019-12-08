@@ -1,8 +1,8 @@
 # install-k8s-lunanode
 
 This repository is here to set up a sandbox to train kubernetes students. Couple of  
-scripts create the environment in Lunanode, service provider in Toronto, they have the lowest price 
-for virtual machines  
+scripts create the environment in Lunanode, a cloud service provider in Toronto, they have the lowest price.
+for KVM virtual machines. Their service is awesome.   
   
 see their website [here](https://www.lunanode.com/).
 
