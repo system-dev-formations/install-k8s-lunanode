@@ -12,7 +12,7 @@ def create_master_cluster(name):
     api.request("vm", "create",
                 {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
 
-cluster_name = 'k8s-green'
+cluster_name = 'k8s-white'
 number_of_vm = input("Nbr_of_cluster ? ")
 
 for i in range(1, int(number_of_vm) + 1):
@@ -65,6 +65,6 @@ natural = natsort.natsorted(list_user)
 # print natural
 for vts in range(0, len(natural)):
     myip = user_dic[natural[vts]]
-    user_line = "{} \t {} \t centos \n".format(natural[vts], myip)
+    user_line = "{} \t {} \t ubuntu \t lawn-vex \n".format(natural[vts], myip)
     hfile.write(user_line)
 hfile.close()

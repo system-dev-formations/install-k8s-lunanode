@@ -1,5 +1,5 @@
 # Utiliser le Dashboard
-L'installation du dashboard est faite a partir du playbook ansible.  
+L'installation du dashboard est faite par le playbook ansible.  
 [voir] (https://github.com/system-dev-formations/install-k8s-lunanode.git)  
 c'est plus facile d'avoir l'alias k et la completion des commandes pour retrouver le port d'ecoute 
 du dashboard de votre cluster Kubernetes. 
@@ -8,7 +8,7 @@ du dashboard de votre cluster Kubernetes.
 
 
 ## Obtenir le token de connexion 
-```jsunicoderegexp
+```shell script
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret |
     grep admin-user | awk '{print $1}' )
 ```
