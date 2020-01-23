@@ -20,10 +20,10 @@ The create_vm_cluster script save all cluster ip addresse, password and user nam
 accordingly to the following structure for your inventory file.   
 ```jsunicoderegexp
 [node]
-51.255.211.160  ansible_ssh_user=ubuntu  ansible_ssh_pass=password ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
-51.68.28.190  ansible_ssh_user=ubuntu  ansible_ssh_pass=password ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+ip_address  ansible_ssh_user=ubuntu  ansible_ssh_pass=password ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+ip_address  ansible_ssh_user=ubuntu  ansible_ssh_pass=password ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
 [master]
-164.132.212.99  ansible_ssh_user=ubuntu  ansible_ssh_pass=password ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+ip_address  ansible_ssh_user=ubuntu  ansible_ssh_pass=password ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
 ```
 ## And run the playbook !!!
 Example:   

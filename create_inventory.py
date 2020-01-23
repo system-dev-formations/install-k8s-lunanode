@@ -7,7 +7,7 @@ with open(r"/home/hme/.lunanode/commands.txt") as hpass:
     lines = hpass.readlines()
 api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 
-f = open(r"/home/hme/inventory_lunanode_ansible-blue", "w+")
+f = open(r"/home/hme/inventory_lunanode_docker-roubaix", "w+")
 results = api.request('vm', 'list')
 val = results.get("vms")
 user_dic = {}

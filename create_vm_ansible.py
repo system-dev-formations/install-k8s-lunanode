@@ -23,16 +23,16 @@ def create_centos_controller(name):
     api.request("vm", "create",
                 {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148508, 'storage': 70})
 
-project_name = 'ansible-ambient-'
-user_number = input("Numero du cluster ansible ? ")
+project_name = 'git-roubaix-'
+user_number = input("Numero du cluster roubaix ? ")
 user_number= str(user_number)
 #create_centos_:controller(project_name + "controller-" +  user_number)
 create_centos_remote(project_name + "remote-" +  user_number)
 #create_ubuntu_remote(project_name + "remote-ubuntu-" +  user_number)
 time.sleep(240)
 results = api.request('vm', 'list')
-f = open(r"/home/hme/inventory_lunanode_ambient_" + user_number, "w+")
-hfile = open(r"/home/hme/user_list_k8s_ambient_" + user_number, "w+")
+f = open(r"/home/hme/inventory_git_roubaix_" + user_number, "w+")
+hfile = open(r"/home/hme/user_list_git_roubaix_" + user_number, "w+")
 val = results.get("vms")
 user_dic = {}
 print

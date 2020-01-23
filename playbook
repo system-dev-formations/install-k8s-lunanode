@@ -124,6 +124,7 @@
       user:
         name: "{{ansible_ssh_user}}"
         password: "{{ 'lawn-vex' | password_hash('sha512') }}"
+        groups: docker, sudo
     - name: added block of alias and completion for kubectl
       blockinfile:
         path:  /home/{{ ansible_ssh_user }}/.bashrc
