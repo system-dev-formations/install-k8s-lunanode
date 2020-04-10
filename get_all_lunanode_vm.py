@@ -19,7 +19,7 @@ for i in range(0, len(val)):
     for key, value in val[i].items():
         if key == 'name':
             #search= "-" + user_number
-            if "docker" not in value:
+            if "k8s" not in value:
                 break
             print('name=', value)
             user = value

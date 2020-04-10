@@ -27,4 +27,13 @@ ip_address  ansible_ssh_user=ubuntu  ansible_ssh_pass=password ansible_ssh_extra
 ```
 ## And run the playbook !!!
 Example:   
-```ansible-playboox -i /home/hme/inventory-k8s-green playbook```
+```ansible-playboox -i /home/hme/iventory playbook```  
+
+##Note:
+If you are outside the lunanode network you should change the following code 
+suitable to your network topology. 
+```shell script
+- name: get primary ip address
+      shell: ip route get 1 | awk '{print $NF;exit}'
+```
+

@@ -16,7 +16,7 @@ for i in range(0, len(val)):
     flag = 0
     for key, value in val[i].items():
         if key == 'name':
-            if "blue" not in value:
+            if "white" not in value:
                 break
             print('name=', value)
             user = value

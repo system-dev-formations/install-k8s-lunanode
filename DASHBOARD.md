@@ -7,13 +7,13 @@ du dashboard de votre cluster Kubernetes.
 ```k get svc -A```
 
 
-## Obtenir le token de connexion 
+## Obtenir le token de connexion au dashboard
 ```shell script
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret |
     grep admin-user | awk '{print $1}' )
 ```
 ## Dans votre navigateur firefox 
 Tapez l'adresse IP de votre cluster et le port d'ecoute de votre dashboard.   
-Comme vous n'avez pas de certificat SSL valide il faut forcer la connexion de votre nagivateur.
+Comme vous n'avez pas de certificat SSL valide il faut forcer la connexion de votre navigateur.
 
 
