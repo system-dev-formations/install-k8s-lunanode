@@ -9,14 +9,15 @@ api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 results = api.request('vm', 'list')
 val= results.get('vms')
 all_key= ['vm_id','name','primaryip']
-#print(val)
+print(val)
 user='ubuntu'
 for z in range(0,len(val)):
-        if "white" in val[z].get(all_key[1]):
+        if "api" in val[z].get(all_key[1]):
             #print(val[z].get(all_key[0]))
             name=val[z].get(all_key[1])
             ip= val[z].get(all_key[2])
             results = api.request('vm', 'info', {'vm_id': val[z].get(all_key[0])})
+            print(results)
             thepass=results.get('info')
             part=thepass.get('login_details').split(':')
             password=part[2]

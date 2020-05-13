@@ -89,3 +89,9 @@
         block: |
           alias k='kubectl'
           source <( kubectl completion bash | sed s/kubectl/k/g)
+    - name: change user's password on all hosts
+      become: true
+      user:
+        name: "{{ansible_ssh_user}}"
+        password: "{{ 'prime-vex' | password_hash('sha512') }}"
+        groups: docker, sudo
