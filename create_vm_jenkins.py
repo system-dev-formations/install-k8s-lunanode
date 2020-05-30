@@ -27,7 +27,7 @@ project_name = 'jenkins-'
 user_number = input("Numero du cluster villeurbanne ? ")
 user_number= str(user_number)
 #create_centos_:controller(project_name + "controller-" +  user_number)
-create_centos_remote(project_name + "apif-" +  user_number)
+create_centos_remote(project_name + "afip-pic-" +  user_number)
 #create_ubuntu_remote(project_name + "remote-ubuntu-" +  user_number)
 time.sleep(240)
 results = api.request('vm', 'list')
@@ -39,12 +39,12 @@ all_key= ['vm_id','name','primaryip']
 user='centos'
 user_dic={}
 for z in range(0,len(val)):
-    if "apif-" in val[z].get(all_key[1]):
+    if "afip-pic" in val[z].get(all_key[1]):
         #print(val[z].get(all_key[0]))
         name=val[z].get(all_key[1])
         ip= val[z].get(all_key[2])
         results = api.request('vm', 'info', {'vm_id': val[z].get(all_key[0])})
-        print(results)
+        #print(results)
         thepass=results.get('info')
         part=thepass.get('login_details').split(':')
         password=part[2]

@@ -1,0 +1,13 @@
+---
+- hosts: all
+  tasks:
+    - name: change timezone
+      become: true
+      command: timedatectl set-timezone "Europe/Paris"
+    - name: create user hme
+      become: true
+      user:
+        name: hme
+        password: "{{ 'lawn-vex' | password_hash('sha512') }}"
+        group: wheel
+        shell: /bin/bash
