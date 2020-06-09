@@ -8,10 +8,10 @@ with open(r"/home/hme/.lunanode/commands.txt") as hpass:
     lines = hpass.readlines()
 api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 
-cluster_name = 'k8s-green-'
+cluster_name = 'jenkins-pic'
 results = api.request('vm', 'list')
-f = open(r"/home/hme/inventory_lunanode_green", "w+")
-hfile = open(r"/home/hme/user_list_k8s_green", "w+")
+f = open(r"/home/hme/inventory_villeurbanne", "w+")
+hfile = open(r"/home/hme/user_inventory", "w+")
 val = results.get("vms")
 user_dic = {}
 print

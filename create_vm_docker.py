@@ -14,7 +14,7 @@ def create_ubuntu_remote(name):
                 {'hostname': name, 'plan_id': 5, 'region': 'roubaix', 'image_id': 240302, 'storage': 70})
 
 
-project_name = 'webforce3-'
+project_name = 'ambient-'
 user_number = input("Nombre de vm ? ")
 for vm in range(1,user_number):
 

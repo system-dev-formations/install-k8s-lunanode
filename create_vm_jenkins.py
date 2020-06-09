@@ -13,21 +13,21 @@ def create_ubuntu_remote(name):
     api.request("vm", "create",
                 {'hostname': name, 'plan_id': 3, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
 
-# image Centos-remote
+# image Centos-remote 6 = 16 mb , 3 = 8 mb
 def create_centos_remote(name):
     api.request("vm", "create",
-                {'hostname': name, 'plan_id': 6, 'region': 'roubaix', 'image_id': 148508, 'storage': 250})
+                {'hostname': name, 'plan_id': 5, 'region': 'roubaix', 'image_id': 148508, 'storage': 250})
 
 # image Centos-controller
 def create_centos_controller(name):
     api.request("vm", "create",
-                {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148508, 'storage': 70})
+                {'hostname': name, 'plan_id': 3, 'region': 'roubaix', 'image_id': 148508, 'storage': 70})
 
-project_name = 'jenkins-'
-user_number = input("Numero du cluster villeurbanne ? ")
+project_name = 'training-'
+user_number = input("Numero de la vm villeurbanne ? ")
 user_number= str(user_number)
 #create_centos_:controller(project_name + "controller-" +  user_number)
-create_centos_remote(project_name + "afip-pic-" +  user_number)
+create_centos_remote(project_name + "jenkins-pic-" +  user_number)
 #create_ubuntu_remote(project_name + "remote-ubuntu-" +  user_number)
 time.sleep(240)
 results = api.request('vm', 'list')
@@ -39,7 +39,7 @@ all_key= ['vm_id','name','primaryip']
 user='centos'
 user_dic={}
 for z in range(0,len(val)):
-    if "afip-pic" in val[z].get(all_key[1]):
+    if "jenkins-pic" in val[z].get(all_key[1]):
         #print(val[z].get(all_key[0]))
         name=val[z].get(all_key[1])
         ip= val[z].get(all_key[2])
