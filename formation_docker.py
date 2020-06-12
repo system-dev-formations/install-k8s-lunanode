@@ -11,7 +11,7 @@ hfile=open(r"/home/hme/users-ambient-docker", "w+")
 # image Ubuntu-remote
 def create_ubuntu_remote(name):
     api.request("vm", "create",
-                {'hostname': name, 'plan_id': 5, 'region': 'roubaix', 'image_id': 240302, 'storage': 70})
+                {'hostname': name, 'plan_id': 83, 'region': 'toronto', 'image_id': 240308, 'storage': 70})
 
 project_name = 'ambient-'
 user_number = input("Nombre de vm ? ")
