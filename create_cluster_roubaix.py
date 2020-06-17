@@ -11,12 +11,13 @@ api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 def create_master_cluster(name):
     api.request("vm", "create",
                 {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
+list_of_color=['amber']
+#list_of_color= ['silver','green','blue','pink','yellow','purple','cyan','brown','magenta','amber']
 
-#list_of_color= ['silver','green','black','blue','pink','yellow','purple','cyan','brown','magenta','amber','carmine']
 #list_of_color= ['silver','green','black','blue','pink']
 #list_of_color= ['yellow','purple','cyan','brown','magenta']
 #list_of_color= ['amber','carmine']
-list_of_color=['black']
+#list_of_color=['black']
 #list_of_color= ['green','black','blue']
 for x in list_of_color:
     cluster_name = 'k8s-' + x
@@ -26,7 +27,7 @@ for x in list_of_color:
         api.request("vm", "create",
                     {'hostname': vm_name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
     # sleep while lunanode setting up public ip addresses for each VMs
-    time.sleep(240)
+    time.sleep(180)
     results = api.request('vm', 'list')
     f = open(r"/home/hme/inventory-" + cluster_name, "w+")
     hfile = open(r"/home/hme/user_list-" + cluster_name, "w+")
