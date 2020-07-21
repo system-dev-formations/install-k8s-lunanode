@@ -27,7 +27,7 @@ project_name = 'training-'
 user_number = input("Numero de la vm villeurbanne ? ")
 user_number= str(user_number)
 #create_centos_:controller(project_name + "controller-" +  user_number)
-create_centos_remote(project_name + "jenkins-pic-" +  user_number)
+create_centos_remote(project_name + "" +  user_number)
 #create_ubuntu_remote(project_name + "remote-ubuntu-" +  user_number)
 time.sleep(240)
 results = api.request('vm', 'list')

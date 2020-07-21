@@ -6,14 +6,14 @@ import time
 with open(r"/home/hme/.lunanode/commands.txt") as hpass:
     lines = hpass.readlines()
 api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
-f = open(r"/home/hme/inventory-ambient-docker", "w+")
-hfile=open(r"/home/hme/users-ambient-docker", "w+")
+f = open(r"/home/hme/inventory-afip-18ag1-docker", "w+")
+hfile=open(r"/home/hme/users-afip-18ag1-docker", "w+")
 # image Ubuntu-remote
 def create_ubuntu_remote(name):
     api.request("vm", "create",
                 {'hostname': name, 'plan_id': 5, 'region': 'roubaix', 'image_id': 240308, 'storage': 70})
 
-project_name = 'ambient-'
+project_name = 'afip-'
 user_number = input("Nombre de vm ? ")
 max_vm = int(user_number)
 for vm in range(1,max_vm):

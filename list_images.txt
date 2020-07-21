@@ -1,0 +1,2293 @@
+{
+  "ubuntu-bionic": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "f974feac-abae-4365-b988-8ec7d1cec10d",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "f63fe42a-900f-4a5e-ba99-ab0e59469b7e",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "b4bdbee1-e1f1-4436-8de4-bdb1b6ba4803",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "9444d178-2285-4842-ac35-5e86eda8da91",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "a5076337-734f-4b99-95ed-9a5bc73b9b09",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "7663c62b-40e3-4e6b-a835-70723ec2050b",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "ubuntu-xenial": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "3d6804e0-086e-4a06-8124-7240a657668d",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "245e5cea-a9b4-4a36-9055-27185afe8690",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "c40fbabc-efc8-4e04-91ea-5e1e22daece1",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "bd859e89-fb2d-466a-a546-383630a1ead1",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "6c34a3f3-5e8a-455b-9bc2-f07c4c35bf89",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "a5f6bb77-3d64-4f7f-abe0-72492b1bc020",
+      "zone": "fr-par-1"
+    }
+  ],
+  "debian-stretch": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "5f7ab0cd-d10e-49a0-91c8-315ed8a6a1a4",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "d954dc33-c52e-4960-93e1-b69c85d169be",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "22a1bd8d-4498-4800-a8e5-4bc85001176c",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "37938de8-e3be-479a-895d-095158f76212",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "86740237-62fc-4538-9b70-4373942f53d3",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "bd6ba96e-d4c4-41f9-88e2-8dad3e6f085b",
+      "zone": "fr-par-1"
+    }
+  ],
+  "debian-jessie": [
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "2dfad6d2-e527-4e93-8eb1-8dc57803b310",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "610f68d5-cbad-4923-98ae-782af8f3b527",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "dc22e553-2d2e-4689-94f8-8817db824202",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "2e570f53-199e-47cc-95dd-f7bc392496e3",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "abf9e3a2-7171-4764-91ef-57f30b21193d",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "69cbdd54-88a1-4458-b75e-662a0848a7ce",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "centos-7.6": [
+    {
+      "compatible_commercial_types": [
+        "VC1S",
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "VC1M",
+        "C2L",
+        "C2M",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "05794ee5-c6d2-4d69-86dd-f1fc9032921d",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "0f44b130-2bc7-4f82-993e-de9d1042c56e",
+      "zone": "fr-par-1"
+    }
+  ],
+  "centos-7.4": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "ec8b431e-ad39-4523-8b94-f3fa7f3cbd06",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "7220ac63-bac8-484b-9d44-93e3bd01f5a6",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "fedora-29": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "541f4562-5417-4b59-85d6-caaf64c1f127",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "START1-XS",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "3c0f706e-0947-47a3-88a3-595c29f7567a",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "fedora-28": [
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "830aad94-24e5-4363-b2c3-e62921bd9294",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "c9cd1782-2159-44b8-83b1-9c48ed6c8a63",
+      "zone": "fr-par-1"
+    }
+  ],
+  "fedora-27": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "097a100e-fd2f-4918-8a5b-d86de5a489be",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "73f0bcd8-a152-4665-ac09-1b105905a475",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "arch-linux": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "f21defd0-9fd9-4fb2-a29a-22844a6be3cd",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "3c904f73-080e-4c6f-8b28-8426cfdcb3c7",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "alpine-linux": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "24141068-1043-4885-bf2b-8290f617e273",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "241b0bb3-9eed-4a7b-b0fd-71c45452ac95",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "centos-8": [
+    {
+      "compatible_commercial_types": [
+        "DEV1-L",
+        "DEV1-M",
+        "DEV1-S",
+        "DEV1-XL",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "GP1-XL",
+        "GP1-XS",
+        "START1-L",
+        "START1-M",
+        "START1-S",
+        "START1-XS",
+        "VC1L",
+        "VC1M",
+        "VC1S",
+        "X64-120GB",
+        "X64-15GB",
+        "X64-30GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "f9738a60-939c-4d87-b9a2-7968e4878f50",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "DEV1-L",
+        "DEV1-M",
+        "DEV1-S",
+        "DEV1-XL",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "GP1-XL",
+        "GP1-XS",
+        "START1-L",
+        "START1-M",
+        "START1-S",
+        "START1-XS",
+        "VC1L",
+        "VC1M",
+        "VC1S",
+        "X64-120GB",
+        "X64-15GB",
+        "X64-30GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "bfaca3da-692a-4cae-8243-5522f8044b94",
+      "zone": "fr-par-1"
+    }
+  ],
+  "debian-buster": [
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "61010e34-7f1e-402b-a253-028a714a6678",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "4720c10f-59e3-4e20-915b-dcee1fc34c11",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "9d6e8a2c-31a9-439c-a4c5-9fba1c5b96ed",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "cc9188b3-3938-47d7-b091-c9ecad1fe507",
+      "zone": "fr-par-1"
+    }
+  ],
+  "docker": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "89c80d27-ddf4-4ffa-8215-b335cce3fd05",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "99e2a9c6-f0b9-42b6-8823-8b0d86ffe9bf",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "45a7e942-1fb0-48c0-bbf6-0acb9af24604",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "c669011a-ee16-42b6-b0c3-ecd19e419539",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "START1-XS",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "dcf35840-c007-4c8b-a48b-227cfd8a347b",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "gitlab": [
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "START1-XS",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "06a2a6e9-922d-4353-9472-bbb1f79fda63",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "4527e41c-0e90-43a8-857e-d9584bf8467f",
+      "zone": "fr-par-1"
+    }
+  ],
+  "gogs": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "776705c4-be8e-4a27-b740-2e8bbba518c5",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "a513a250-e6e9-4687-892e-9d10b29e3972",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "d1341ece-ffda-4386-ad3a-27d60b650401",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "69b8bc0e-7771-42af-a4ad-ca756c31a18a",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "golang": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "43213956-c7a3-44b8-9d96-d51fa7457969",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "5ffb52aa-ea55-4596-9d0f-e403701b6624",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "bef7a6af-1bab-490a-a6cb-6a07c1b9ac7b",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "f0b7d9b8-aa31-45b4-9f7e-a68aa164ce6f",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "76ca1eb7-f68f-4770-a7a1-ab7665ae3297",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "0d954c34-341c-483a-be1c-71cf197343ed",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "java": [
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "c50cb4b2-bf7b-47e2-ab5f-3a9d3d4c1aef",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "98c93894-26a8-463b-a72b-c9d2b531b95d",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "43c43b5e-1e4f-4905-baef-71df3c565b4d",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "0c3f9f03-f490-444b-a05e-f342e917fed0",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "5e07622b-ad8b-4f65-b55f-cca18c3c0bbf",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "c0330755-e5d0-4c2c-ad0e-70687e1dccbb",
+      "zone": "fr-par-1"
+    }
+  ],
+  "lemp-stack": [
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "32332006-1420-4260-97c7-c1da586f68cd",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "START1-XS",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "d16622f6-32c1-4d16-a3ca-38b23d3a25fb",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "1bd37d60-4494-485f-9a82-0a211005489c",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "415d3727-0013-419a-abc6-1a688b096730",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "26c3727a-5b77-4b26-89c9-445ea2006f07",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "155ab61a-e069-4acb-bae3-e8217c5c0376",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "mattermost": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "486e128c-fde7-42d7-9200-5d91b8dc2761",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "eb2ed407-177c-4195-a4ca-f3baa85e62ed",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "nextcloud": [
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "e9af0a24-4312-4305-9386-b3a79e02f92d",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "c38073cf-ee40-4dc2-8059-ec2845f38f46",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "START1-XS",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "b9e319f5-ac4c-400d-8ff6-a6a769755190",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "0390c3e0-186d-4b24-8d0d-0e08b74fb59a",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "900971a4-3a3e-4ef9-b92f-b33c366c9f5c",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "7b7d4dde-6fe1-4586-a5a5-ae1af2ca2605",
+      "zone": "fr-par-1"
+    }
+  ],
+  "node.js": [
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "a8020f20-8a66-43f3-8253-35941db3d237",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "3cc79cc6-4649-46d9-a2b6-698f1236e1d0",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "c9fb2bed-a9b8-4e1a-bf15-db8e763fe7a7",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "f01db1d0-092a-47de-a32e-09bd6bda7715",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "6f2e99e8-da99-4990-b689-7294e8a604fa",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "03980aee-14cd-44f1-be3c-508c8b8a19e6",
+      "zone": "fr-par-1"
+    }
+  ],
+  "openvpn": [
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "b15ddb1a-0611-412e-881a-3aed1b36392b",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "02906ae8-bf44-4dd0-bd05-6312dd9fa234",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "3aa3622c-45d4-4388-9618-cce6974c71a0",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "a5430536-2a51-425d-8613-ef84dae91e27",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "START1-XS",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "51573d2d-301f-4d24-b0d6-f151728c82f5",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "cac79531-98d5-48fa-aba1-8250214b88a3",
+      "zone": "fr-par-1"
+    }
+  ],
+  "owncloud": [
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "a5fb716a-1c60-4740-a179-98ce315ca3d7",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "2fdbbbb4-3b63-403b-9604-27713971efd6",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "4208a611-a789-40ea-ac0e-fb3001ee39a9",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "93de8eae-535f-47bd-88fa-84af7b5eaf76",
+      "zone": "fr-par-1"
+    }
+  ],
+  "prestashop": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "4d07fcfa-ccda-4945-81aa-8de2206b39c0",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "73db574d-d5a0-49d5-b6ca-dd662895fac3",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "c97dc20f-8066-4d56-aabf-2b75162c0f9f",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "c78c3206-eb2b-4217-ad7c-0aca98dec145",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "7f91941c-f06a-4103-91a4-793f03b11fda",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "271a9c1f-73ef-4943-bac7-799130228040",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "python": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "70b9c9cf-c2d9-4a80-b450-a7aef8226d96",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "5218fa4e-8239-4831-ac2a-c96e23f387a2",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "f205e2a6-621a-4534-a5d1-36f6cf1f8376",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "613a5226-3d97-4f0e-abe2-99385a050784",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "ruby": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-L",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "09c71ada-00c6-43de-ad44-c77c5b857a05",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "24f2e8ee-80f1-4a8d-83c4-74ed8cd80ed0",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "e2479a13-414b-4a0c-ba50-d01e67ee8600",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "f83a03fa-58eb-4b35-bda9-1a42b6d6d90d",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "torrents": [
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "41d0db97-4822-4642-96ec-6f3fbcfc167c",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [],
+      "arch": "arm",
+      "id": "3fbe5f72-81da-4a0a-91ef-36ab68fc801e",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "START1-XS",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "1aed7396-79dc-431d-af03-d3dde35d195f",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "398875b6-de43-4946-976f-ba5189954912",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "a3160162-3d72-4632-8e42-4849a1280743",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "f5d116e3-2b58-44cf-a83a-cd0682135473",
+      "zone": "fr-par-1"
+    }
+  ],
+  "ubuntu-focal": [
+    {
+      "compatible_commercial_types": [
+        "DEV1-L",
+        "DEV1-M",
+        "DEV1-S",
+        "DEV1-XL",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "GP1-XL",
+        "GP1-XS",
+        "RENDER-S",
+        "START1-L",
+        "START1-M",
+        "START1-S",
+        "START1-XS",
+        "VC1L",
+        "VC1M",
+        "VC1S",
+        "X64-120GB",
+        "X64-15GB",
+        "X64-30GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "7efb5e7b-0a27-489d-bda2-a628d5b51808",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "DEV1-L",
+        "DEV1-M",
+        "DEV1-S",
+        "DEV1-XL",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "GP1-XL",
+        "GP1-XS",
+        "RENDER-S",
+        "START1-L",
+        "START1-M",
+        "START1-S",
+        "START1-XS",
+        "VC1L",
+        "VC1M",
+        "VC1S",
+        "X64-120GB",
+        "X64-15GB",
+        "X64-30GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "966d81e9-94d9-469d-9bd5-f3cb3586fc8f",
+      "zone": "nl-ams-1"
+    }
+  ],
+  "ubuntu-bionic-ml-10.1": [
+    {
+      "compatible_commercial_types": [
+        "RENDER-S"
+      ],
+      "arch": "x86_64",
+      "id": "8fa4f46b-2cb2-40df-813a-727df120b9e4",
+      "zone": "fr-par-1"
+    }
+  ],
+  "ubuntu-bionic-ml-9.2": [
+    {
+      "compatible_commercial_types": [
+        "RENDER-S"
+      ],
+      "arch": "x86_64",
+      "id": "1dad4207-f91a-48c3-9fac-6620e90b9434",
+      "zone": "fr-par-1"
+    }
+  ],
+  "wordpress": [
+    {
+      "compatible_commercial_types": [
+        "GP1-XS",
+        "DEV1-M",
+        "DEV1-L",
+        "START1-XS",
+        "DEV1-S",
+        "RENDER-S",
+        "GP1-XL",
+        "C2S",
+        "X64-15GB",
+        "DEV1-XL",
+        "C2L",
+        "C2M",
+        "VC1S",
+        "START1-S",
+        "X64-30GB",
+        "GP1-L",
+        "GP1-M",
+        "GP1-S",
+        "START1-L",
+        "START1-M",
+        "VC1L",
+        "VC1M",
+        "X64-120GB",
+        "X64-60GB"
+      ],
+      "arch": "x86_64",
+      "id": "8523fb41-500a-4f21-998b-890908da6119",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "C1"
+      ],
+      "arch": "arm",
+      "id": "5645133b-67a3-4644-9941-16f7e2b428ea",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-32GB",
+        "ARM64-128GB",
+        "ARM64-4GB",
+        "ARM64-64GB",
+        "ARM64-16GB"
+      ],
+      "arch": "arm64",
+      "id": "757fac76-5265-46f8-8a1f-00c0fb270010",
+      "zone": "fr-par-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "X64-120GB",
+        "C2M",
+        "START1-S",
+        "VC1S",
+        "START1-XS",
+        "C2L",
+        "X64-15GB",
+        "C2S",
+        "X64-30GB",
+        "START1-L",
+        "START1-M",
+        "X64-60GB",
+        "VC1L",
+        "VC1M"
+      ],
+      "arch": "x86_64",
+      "id": "7a892c1a-bbdc-491f-9974-4008e3708664",
+      "zone": "nl-ams-1"
+    },
+    {
+      "compatible_commercial_types": [
+        "ARM64-4GB",
+        "ARM64-128GB",
+        "ARM64-16GB",
+        "ARM64-32GB",
+        "ARM64-8GB",
+        "ARM64-2GB",
+        "ARM64-64GB"
+      ],
+      "arch": "arm64",
+      "id": "726334eb-0733-4b6a-becd-769ff9bfe16d",
+      "zone": "nl-ams-1"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  become:
+  tasks:
+    - name: Create an instance on Scaleway
+      scaleway_compute:
+        name: ambient-remote-1
+        state: present
+        image: 3d6804e0-086e-4a06-8124-7240a657668d
+        organization: dockerlite
+        region: par1
+        commercial_type: DEV1-M

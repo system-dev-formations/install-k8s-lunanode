@@ -24,7 +24,7 @@ def create_centos_controller(name):
                 {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148508, 'storage': 70})
 
 project_name = 'ansible-'
-user_number = input("Numero du cluster ville ? ")
+user_number = input("Numero du cluster  ? ")
 user_number= str(user_number)
 #create_centos_:controller(project_name + "controller-" +  user_number)
 create_centos_remote(project_name + "remote-" +  user_number)

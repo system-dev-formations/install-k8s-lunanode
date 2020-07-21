@@ -14,7 +14,7 @@ def create_ubuntu_remote(name):
                 {'hostname': name, 'plan_id': 5, 'region': 'roubaix', 'image_id': 240302, 'storage': 70})
 
 
-project_name = 'ambient-'
+project_name = 'afip-'
 user_number = input("Nombre de vm ? ")
 for vm in range(1,user_number):
 
@@ -22,8 +22,8 @@ for vm in range(1,user_number):
 
 time.sleep(240)
 results = api.request('vm', 'list')
-f = open(r"/home/hme/inventory_webforce3_docker_" + str(user_number), "w+")
-hfile = open(r"/home/hme/user_list_webforce3_docker_" + str(user_number), "w+")
+f = open(r"/home/hme/inventory_afip_docker_" + str(user_number), "w+")
+hfile = open(r"/home/hme/users_afip_docker_" + str(user_number), "w+")
 val = results.get("vms")
 user_dic = {}
 print
