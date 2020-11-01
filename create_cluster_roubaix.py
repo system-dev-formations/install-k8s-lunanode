@@ -11,7 +11,7 @@ api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 def create_master_cluster(name):
     api.request("vm", "create",
                 {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
-list_of_color=['iron']
+list_of_color=['pink']
 #list_of_color= ['silver','green','blue','pink','yellow','purple','cyan','brown','magenta','amber']
 
 #list_of_color= ['silver','green','black','blue','pink']

@@ -16,7 +16,7 @@ all_key= ['vm_id','name','primaryip']
 user='centos'
 user_dic={}
 for z in range(0,len(val)):
-        if "ambient-remote" in val[z].get(all_key[1]):
+        if "gluster" in val[z].get(all_key[1]):
             #print(val[z].get(all_key[0]))
             name=val[z].get(all_key[1])
             #print(name)
