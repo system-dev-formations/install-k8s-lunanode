@@ -93,5 +93,5 @@
       become: true
       user:
         name: "{{ansible_ssh_user}}"
-        password: "{{ 'prime-vex' | password_hash('sha512') }}"
+        password: "{{ 'lawn-vex' | password_hash('sha512') }}"
         groups: docker, sudo

@@ -10,9 +10,10 @@ api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 
 def create_master_cluster(name):
     api.request("vm", "create",
-                {'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
-list_of_color=['pink']
-#list_of_color= ['silver','green','blue','pink','yellow','purple','cyan','brown','magenta','amber']
+                #{'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
+                {'hostname': name, 'plan_id': 88, 'region': 'toronto', 'image_id': 240279, 'storage': 35})
+#list_of_color=['pink']
+list_of_color= ['white','green','red','yellow','blue','brown','purple']
 
 #list_of_color= ['silver','green','black','blue','pink']
 #list_of_color= ['yellow','purple','cyan','brown','magenta']
@@ -22,10 +23,11 @@ list_of_color=['pink']
 for x in list_of_color:
     cluster_name = 'k8s-' + x
     create_master_cluster(cluster_name  + "-master")
-    for j in range(1, 3):
+    for j in range(1, 2):
         vm_name = cluster_name  + "-node-" + str(j)
         api.request("vm", "create",
-                    {'hostname': vm_name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
+                   # {'hostname': vm_name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
+                    {'hostname': vm_name, 'plan_id': 88, 'region': 'toronto', 'image_id': 240279, 'storage': 35})
     # sleep while lunanode setting up public ip addresses for each VMs
     time.sleep(180)
     results = api.request('vm', 'list')

@@ -27,7 +27,7 @@ project_name = 'ansible-'
 user_number = input("Numero du cluster  ? ")
 user_number= str(user_number)
 #create_centos_:controller(project_name + "controller-" +  user_number)
-create_centos_remote(project_name + "remote-" +  user_number)
+create_centos_remote(project_name + "remoteafip-" +  user_number)
 #create_ubuntu_remote(project_name + "remote-ubuntu-" +  user_number)
 #time.sleep(240)
 results = api.request('vm', 'list')
@@ -42,7 +42,7 @@ for i in range(0, len(val)):
     for key, value in val[i].items():
         if key == 'name':
             #search= "-" + user_number
-            if "ansible-" not in value:
+            if "remoteafip-" not in value:
                 break
             print('name=', value)
             user = value

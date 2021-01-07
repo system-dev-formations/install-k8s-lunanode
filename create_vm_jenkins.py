@@ -1,11 +1,14 @@
 #!/usr/bin/env python
-from lndynamic import LNDynamic
+
 import natsort
 import time
 
+from lndynamic import LNDynamic
+
+
 # find lunanode credentials
 with open(r"/home/hme/.lunanode/commands.txt") as hpass:
-    lines = hpass.readlines()
+      lines = hpass.readlines()
 api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 
 # image Ubuntu-remote
@@ -21,13 +24,13 @@ def create_centos_remote(name):
 # image Centos-controller
 def create_centos_controller(name):
     api.request("vm", "create",
-                {'hostname': name, 'plan_id': 3, 'region': 'roubaix', 'image_id': 148508, 'storage': 70})
-
+                #{'hostname': name, 'plan_id': 3, 'region': 'roubaix', 'image_id': 148508, 'storage': 70})
+                {'hostname': name, 'plan_id': 90, 'region': 'toronto', 'image_id': 148497, 'storage': 125})
 project_name = 'training-'
 user_number = input("Numero de la vm villeurbanne ? ")
 user_number= str(user_number)
 #create_centos_:controller(project_name + "controller-" +  user_number)
-create_centos_remote(project_name + "" +  user_number)
+create_centos_controller(project_name + "" +  user_number)
 #create_ubuntu_remote(project_name + "remote-ubuntu-" +  user_number)
 time.sleep(240)
 results = api.request('vm', 'list')
