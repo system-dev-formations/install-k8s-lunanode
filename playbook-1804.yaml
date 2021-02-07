@@ -10,6 +10,21 @@
       apt: name='*' state=latest
     - name: apt docker io
       apt: name=docker.io state=latest update_cache=yes
+    - name: stop docker io
+      systemd: name=docker state=stopped
+    - name: install daemon.json
+      template:
+        src: daemon.j2
+        dest: /etc/docker/daemon.json
+    - name: reload the docker daemon
+      systemd:
+        name:  docker
+        state: started
+    - name: enable service docker
+      systemd:
+        name: docker
+        enabled: yes
+        masked: no
     - name: set kubernetes deb repo in apt source list
       lineinfile: create=yes
                   dest=/etc/apt/sources.list.d/kubernetes.list
@@ -87,7 +102,7 @@
       shell: openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'
       register: sha_key
     - name: get  public ip address for lunanode cloud provider
-      shell: wget -qO - icanhazip.com
+      shell: hostname -I | awk '{print $1}'
       register: ip_address
     - name: Add K8s token and hash to a dummy host for usage latter on
       add_host:
@@ -117,6 +132,8 @@
       copy: src=dashboard-adminuser.yaml dest=/home/{{ ansible_ssh_user }}
     - name: apply admin-user script
       shell: kubectl apply -f /home/{{ ansible_ssh_user }}/dashboard-adminuser.yaml
+    - name: install golang
+      shell: snap install go --classic
 
 
 - hosts: all,!dummy

@@ -66,8 +66,8 @@
     - name: get sha:256 key
       shell: openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'
       register: sha_key
-    - name: get primary ip address
-      shell: ip route get 1 | awk '{print $NF;exit}'
+    - name: get  public ip address for lunanode cloud provider
+      shell: hostname -I | awk '{print $1}'
       register: ip_address
     - name: Add K8s token and hash to a dummy host for usage latter on
       add_host:

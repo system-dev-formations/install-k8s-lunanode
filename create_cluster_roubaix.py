@@ -12,8 +12,8 @@ def create_master_cluster(name):
     api.request("vm", "create",
                 #{'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
                 {'hostname': name, 'plan_id': 88, 'region': 'toronto', 'image_id': 240279, 'storage': 35})
-#list_of_color=['pink']
-list_of_color= ['white','green','red','yellow','blue','brown','purple']
+list_of_color=['pink']
+#list_of_color= ['white','green','red','yellow','blue','brown','purple']
 
 #list_of_color= ['silver','green','black','blue','pink']
 #list_of_color= ['yellow','purple','cyan','brown','magenta']

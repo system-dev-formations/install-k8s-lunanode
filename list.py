@@ -3,11 +3,11 @@ from lndynamic import LNDynamic
 import natsort
 import time
 
-with open(r"/home/hme/.lunanode/commands.txt") as hpass:
+with open(r"../../afip_luna.txt") as hpass:
     lines = hpass.readlines()
 
-f = open(r"/home/hme/inventory-afip-ansible", "w+")
-hfile=open(r"/home/hme/users-afip-ansible", "w+")
+f = open(r"/home/hme/inventory-remote-bac-4", "w+")
+hfile=open(r"/home/hme/users-remote-bac-4", "w+")
 api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 results = api.request('vm', 'list')
 val= results.get('vms')
@@ -16,7 +16,7 @@ all_key= ['vm_id','name','primaryip']
 user='centos'
 user_dic={}
 for z in range(0,len(val)):
-        if "remoteafip-" in val[z].get(all_key[1]):
+        if "remote" in val[z].get(all_key[1]):
             #print(val[z].get(all_key[0]))
             name=val[z].get(all_key[1])
             #print(name)
@@ -27,7 +27,7 @@ for z in range(0,len(val)):
             part=thepass.get('login_details').split(':')
             password=part[2]
             line = "{} ansible_host={}  ansible_ssh_user={}  ansible_ssh_pass={} ansible_ssh_extra_args='-o StrictHostKeyChecking=no'\n".format(name, ip, user , password.strip() )
-            user_dic[name]="ip={} user={} password={}".format(ip,"ubuntu",password.strip())
+            user_dic[name]="ip={} user={} password={}".format(ip,"centos",password.strip())
             f.write(line)
 f.close()
 list_user = user_dic.keys()
