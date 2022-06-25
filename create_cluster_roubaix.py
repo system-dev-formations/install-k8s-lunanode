@@ -4,30 +4,32 @@ import natsort
 import time
 
 # find lunanode credentials
-with open(r"/home/hme/.lunanode/commands.txt") as hpass:
+with open(r"../../system-dev.txt") as hpass:
     lines = hpass.readlines()
 api = LNDynamic(lines[0].rstrip('\n'), lines[1].rstrip('\n'))
 
 def create_master_cluster(name):
     api.request("vm", "create",
                 #{'hostname': name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
-                {'hostname': name, 'plan_id': 88, 'region': 'toronto', 'image_id': 240279, 'storage': 35})
-list_of_color=['pink']
-#list_of_color= ['white','green','red','yellow','blue','brown','purple']
-
-#list_of_color= ['silver','green','black','blue','pink']
-#list_of_color= ['yellow','purple','cyan','brown','magenta']
+                #{'hostname': name, 'plan_id': 88, 'region': 'toronto', 'image_id': 240279, 'storage': 35})
+                {'hostname': name, 'plan_id': 88, 'region': 'toronto', 'image_id': 240277, 'storage': 35})
+#list_of_color=['test']
+#list_of_color= ['black']
+#list_of_color= ['black','red','blue','yellow','white','green','brown','cyan']
+#list_of_color= ['magenta','purple','orange','pink','silver','grey', 'amber']
+list_of_color= ['yellow','purple','cyan','brown']
 #list_of_color= ['amber','carmine']
 #list_of_color=['black']
 #list_of_color= ['green','black','blue']
 for x in list_of_color:
     cluster_name = 'k8s-' + x
     create_master_cluster(cluster_name  + "-master")
-    for j in range(1, 2):
+    for j in range(1, 3):
         vm_name = cluster_name  + "-node-" + str(j)
         api.request("vm", "create",
                    # {'hostname': vm_name, 'plan_id': 4, 'region': 'roubaix', 'image_id': 148540, 'storage': 70})
-                    {'hostname': vm_name, 'plan_id': 88, 'region': 'toronto', 'image_id': 240279, 'storage': 35})
+                   # {'hostname': vm_name, 'plan_id': 88, 'region': 'toronto', 'image_id': 240279, 'storage': 35})
+                    {'hostname': vm_name, 'plan_id': 88, 'region': 'toronto', 'image_id': 240277, 'storage': 35})
     # sleep while lunanode setting up public ip addresses for each VMs
     time.sleep(180)
     results = api.request('vm', 'list')

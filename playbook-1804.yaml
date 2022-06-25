@@ -133,6 +133,7 @@
     - name: apply admin-user script
       shell: kubectl apply -f /home/{{ ansible_ssh_user }}/dashboard-adminuser.yaml
     - name: install golang
+      become: true
       shell: snap install go --classic
 
 
